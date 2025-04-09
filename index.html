@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぽたあじゅのホームページ</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="code-tag">&lt;<span class="code-element">dev</span>&gt;</span>
+        <span class="logo-text">ぽたあじゅ</span>
+        <span class="code-tag">&lt;/<span class="code-element">dev</span>&gt;</span>
+      </div>
+      <div class="menu-toggle" id="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link"><i class="fas fa-user-circle"></i> 自己紹介</a></li>
+        <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> スキル</a></li>
+        <li><a href="#projects" class="nav-link"><i class="fas fa-laptop-code"></i> プロジェクト</a></li>
+        <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> 大会/コンテスト</a></li>
+        <li><a href="#contact" class="nav-link"><i class="fas fa-paper-plane"></i> お問い合わせ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- ヘッダー -->
+    <header class="hero">
+      <div class="circuit-bg"></div>
+      <div class="profile">
+        <div class="profile-image">
+          <img src="images/potaajyu.jpg" alt="プロフィール画像">
+        </div>
+        <h1>ぽたあじゅ</h1>
+        <p class="title">学生エンジニア / 高専生</p>
+        <div class="typing-text" id="typing-text">
+          <span class="typed-cursor">_</span>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/potaajyu1729" aria-label="GitHub" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://x.com/potaajyu_jv" aria-label="Twitter" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://qiita.com/potaajyu" aria-label="Qiita" title="Qiita"><i class="fas fa-book-open"></i></a>
+          <a href="mailto:potaajyu.kosen.jp@gmail.com" aria-label="Email" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="scroll-down">
+        <a href="#about">
+          <span class="mouse">
+            <span class="wheel"></span>
+          </span>
+          <div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+      <!-- 自己紹介 -->
+      <section id="about" class="about">
+        <h2><i class="fas fa-user-circle"></i> 自己紹介</h2>
+        <div class="card">
+          <div class="terminal">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="terminal-button red"></span>
+                <span class="terminal-button yellow"></span>
+                <span class="terminal-button green"></span>
+              </div>
+              <div class="terminal-title">about.js</div>
+            </div>
+            <div class="terminal-body">
+              <div class="code-line"><span class="code-keyword">const</span> <span class="code-variable">profile</span> = {</div>
+              <div class="code-line indent"><span class="code-property">name</span>: <span class="code-string">"ぽたあじゅ"</span>,</div>
+              <div class="code-line indent"><span class="code-property">role</span>: <span class="code-string">"学生エンジニア / 高専生"</span>,</div>
+              <div class="code-line indent"><span class="code-property">description</span>: <span class="code-string">"沖縄工業高等専門学校で情報分野を学んでいる学生エンジニア見習いです。プログラミングが趣味で、最近はAIやweb開発に強い関心を持っています。"</span>,</div>
+              <div class="code-line indent"><span class="code-property">experience</span>: <span class="code-string">"これまでに、いくつかの実践的なプロジェクトやコンテスト等を通じて、問題解決能力やチームでの協力の重要性を学びました。現在は、高専ロボコンや宇宙甲子園(缶サット部門)を中心にスキルを磨いています。"</span>,</div>
+              <div class="code-line indent"><span class="code-property">goals</span>: <span class="code-string">"将来的には、アプリケーション開発やデバイス製作等の知見を深め、IT業界で活躍するエンジニアとして成長したいと考えています。"</span>,</div>
+              <div class="code-line indent"><span class="code-property">website</span>: <span class="code-string">"このサイトでは、私の活動や使用した技術をまとめるポートフォリオとしても活用しています。ご覧いただき、何かご興味やご質問等あればページ下のお問い合わせの項目からお願いします。"</span></div>
+              <div class="code-line">};</div>
+              <div class="code-line"><span class="code-keyword">export default</span> profile;</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- スキル -->
+      <section id="skills" class="skills">
+        <h2><i class="fas fa-code"></i> スキル</h2>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-header">
+              <h3><i class="fas fa-code"></i> プログラミング言語</h3>
+            </div>
+            <ul>
+              <li>
+                <span class="skill-name">JavaScript <i class="fab fa-js"></i></span>
+                <span class="skill-bar"><span style="width: 80%"></span></span>
+                <span class="skill-percent">80%</span>
+              </li>
+              <li>
+                <span class="skill-name">HTML/CSS <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i></span>
+                <span class="skill-bar"><span style="width: 78%"></span></span>
+                <span class="skill-percent">78%</span>
+              </li>
+              <li>
+                <span class="skill-name">C# <i class="fab fa-microsoft"></i></span>
+                <span class="skill-bar"><span style="width: 60%"></span></span>
+                <span class="skill-percent">60%</span>
+              </li>
+              <li>
+                <span class="skill-name">Python <i class="fab fa-python"></i></span>
+                <span class="skill-bar"><span style="width: 46%"></span></span>
+                <span class="skill-percent">46%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3><i class="fas fa-tools"></i> フレームワーク・ツール</h3>
+            </div>
+            <ul>
+              <li>
+                <span class="skill-name">UNITY <i class="fab fa-unity"></i></span>
+                <span class="skill-bar"><span style="width: 68%"></span></span>
+                <span class="skill-percent">68%</span>
+              </li>
+              <li>
+                <span class="skill-name">Node.js <i class="fab fa-node-js"></i></span>
+                <span class="skill-bar"><span style="width: 60%"></span></span>
+                <span class="skill-percent">60%</span>
+              </li>
+              <li>
+                <span class="skill-name">React <i class="fab fa-react"></i></span>
+                <span class="skill-bar"><span style="width: 38%"></span></span>
+                <span class="skill-percent">38%</span>
+              </li>
+              <li>
+                <span class="skill-name">Ruby on Rails <i class="fas fa-gem"></i></span>
+                <span class="skill-bar"><span style="width: 20%"></span></span>
+                <span class="skill-percent">20%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <h3><i class="fas fa-plus-circle"></i> その他のスキル</h3>
+            </div>
+            <ul>
+              <li>
+                <span class="skill-name">PowerPoint <i class="fas fa-file-powerpoint"></i></span>
+                <span class="skill-bar"><span style="width: 82%"></span></span>
+                <span class="skill-percent">82%</span>
+              </li>
+              <li>
+                <span class="skill-name">Figma <i class="fab fa-figma"></i></span>
+                <span class="skill-bar"><span style="width: 75%"></span></span>
+                <span class="skill-percent">75%</span>
+              </li>
+              <li>
+                <span class="skill-name">MySQL <i class="fas fa-database"></i></span>
+                <span class="skill-bar"><span style="width: 48%"></span></span>
+                <span class="skill-percent">48%</span>
+              </li>
+              <li>
+                <span class="skill-name">コミュ力 <i class="fas fa-comments"></i></span>
+                <span class="skill-bar"><span style="width: 3%"></span></span>
+                <span class="skill-percent">3%</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- プロジェクト -->
+      <section id="projects" class="projects">
+        <h2><i class="fas fa-laptop-code"></i> プロジェクト</h2>
+        <div class="cards-container">
+          <h4>現在プロジェクトセクションは製作・調整中です</h4>
+          <!-- <div class="card project-card">
+            <div class="project-image">
+              <div class="code-overlay"></div>
+              <img src="/placeholder.svg?height=200&width=400" alt="プロジェクト1のイメージ">
+            </div>
+            <div class="project-content">
+              <h3>プロジェクト名 1</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+              <p>
+                ここにプロジェクトの説明を入力してください。どのような課題を解決したのか、どのような技術を使用したのか、
+                あなたの役割は何だったのかなどを書くことができます。
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> デモ</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="card project-card">
+            <div class="project-image">
+              <div class="code-overlay"></div>
+              <img src="/placeholder.svg?height=200&width=400" alt="プロジェクト2のイメージ">
+            </div>
+            <div class="project-content">
+              <h3>プロジェクト名 2</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">PostgreSQL</span>
+              </div>
+              <p>
+                ここにプロジェクトの説明を入力してください。どのような課題を解決したのか、どのような技術を使用したのか、
+                あなたの役割は何だったのかなどを書くことができます。
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> デモ</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- 経歴 -->
+      <section id="experience" class="experience">
+  <h2><i class="fas fa-briefcase"></i> 経歴</h2>
+  
+  <!-- タブナビゲーション -->
+  <div class="experience-tabs">
+    <button class="tab-btn active" data-tab="education">
+      <i class="fas fa-graduation-cap"></i> 学歴
+    </button>
+    <button class="tab-btn" data-tab="competitions">
+      <i class="fas fa-trophy"></i> 大会/コンテスト
+    </button>
+    <button class="tab-btn" data-tab="ieice">
+      <i class="fas fa-university"></i> その他
+    </button>
+  </div>
+  
+  <!-- タブコンテンツ -->
+  <div class="tab-content">
+    <!-- 学歴タブ -->
+    <div class="tab-pane active" id="education">
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>沖縄工業高等専門学校</h3>
+                <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024年 ~ 現在</div>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  情報通信システム工学科：所属
+                </p>
+                <div class="achievement-tags">
+                  <span class="achievement-tag"><i class="fas fa-laptop-code"></i> 情報系学科</span>
+                  <span class="achievement-tag"><i class="fas fa-code"></i> 高専</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 大会/コンテストタブ -->
+    <div class="tab-pane" id="competitions">
+      <div class="card">
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-header">
+                  <h3>WiCON 2024 本選</h3>
+                  <div class="timeline-date">
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025年3月</div>
+                  </div>
+                </div>
+                <div class="timeline-body">
+                  <p>WiCON 2024 本選に参加し、視覚障がい者の自由な移動を支援する次世代ウエアラブルデバイス「わんだらん」を発表。WiCONイノベーション賞を受賞しました。</p>
+                  <div class="achievement-tags">
+                    <span class="achievement-tag"><i class="fas fa-trophy"></i> 受賞</span>
+                    <span class="achievement-tag"><i class="fas fa-laptop-code"></i> プロジェクト発表</span>
+                  </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3>宇宙甲子園（缶サット部門）全国大会</h3>
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025年2月</div>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      宇宙甲子園の缶サット部門の全国大会に出場しました。受賞までは届きませんでしたが、他校との技術交流の場にすることが出来ました。
+                    </p>
+                    <div class="achievement-tags">
+                      <span class="achievement-tag"><i class="fas fa-rocket"></i> 缶サット開発</span>
+                      <span class="achievement-tag"><i class="fas fa-satellite"></i> 宇宙工学</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-header">
+                    <h3>高専ロボコン 九州沖縄地区大会</h3>
+                    <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2024年10月</div>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      沖縄高専Bチーム・選手・制御班として出場しました。当日の通信トラブル等があり、全国大会出場とはなりませんでしたが大きな経験になりました。
+                    </p>
+                    <div class="achievement-tags">
+                      <span class="achievement-tag"><i class="fas fa-robot"></i> ロボット製作</span>
+                      <span class="achievement-tag"><i class="fas fa-microchip"></i> 制御システム</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- その他タブ -->
+    <div class="tab-pane" id="ieice">
+      <div class="card">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <h3>電子情報通信学会 ジュニア&学生ポスターセッション</h3>
+                <div class="timeline-date"><i class="fas fa-calendar-alt"></i> 2025年3月</div>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  電子情報通信学会 ジュニア&学生ポスターセッションで「水中ドローンとAIを利用したサンゴと魚の健康調査システムの研究開発」について発表し、特別賞を受賞しました。
+                </p>
+                <div class="achievement-tags">
+                  <span class="achievement-tag"><i class="fas fa-microscope"></i> 研究活動</span>
+                  <span class="achievement-tag"><i class="fas fa-chalkboard-teacher"></i> 学会発表</span>
+                  <span class="achievement-tag"><i class="fas fa-file-alt"></i> 受賞</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- お問い合わせ -->
+      <section id="contact" class="contact">
+        <h2><i class="fas fa-paper-plane"></i> お問い合わせ</h2>
+        <div class="card">
+          <div class="contact-grid">
+            <div class="contact-info">
+              <h3><i class="fas fa-envelope"></i> メールでのお問い合わせ</h3>
+              <p>お問い合わせやお仕事のご依頼は下記のメールアドレスまでお願いします。</p>
+              <a href="mailto:your-email@example.com" class="btn email-btn">
+                <i class="fas fa-envelope"></i> メールを送る
+              </a>
+            </div>
+            <div class="contact-social">
+              <h3><i class="fas fa-share-alt"></i> SNS</h3>
+              <div class="social-grid">
+                <a href="#" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#" class="social-btn"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="social-btn"><i class="fas fa-book-open"></i> Qiita</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="code-tag">&lt;<span class="code-element">footer</span>&gt;</span>
+          <p>&copy; <span id="current-year"></span> ぽたあじゅ. All rights reserved.</p>
+          <span class="code-tag">&lt;/<span class="code-element">footer</span>&gt;</span>
+        </div>
+        <div class="footer-links">
+          <a href="#about">自己紹介</a>
+          <a href="#skills">スキル</a>
+          <a href="#projects">プロジェクト</a>
+          <a href="#experience">大会/コンテスト</a>
+          <a href="#contact">お問い合わせ</a>
+        </div>
+      </div>
+      <div class="matrix-animation" id="matrix-canvas"></div>
+    </footer>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
