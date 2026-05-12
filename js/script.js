@@ -1,5 +1,5 @@
 // 現在の年を取得してフッターに表示
-document.getElementById('current-year').textContent = new Date().getFullYear();
+document.getElementById('current-year').textContent = '2025–' + new Date().getFullYear();
 
 // ハンバーガーメニューの動作
 document.addEventListener('DOMContentLoaded', () => {
